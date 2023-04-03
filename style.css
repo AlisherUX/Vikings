@@ -1,0 +1,149 @@
+@import url(./fonts.css);
+
+:root {
+  --Rb: "Roboto-Bold";
+  --Rli: "Roboto-Lightitalic";
+  --Rr: "Roboto-Regular";
+  --body-color: #0e0e0e;
+  --white: #fff;
+  --text-color: #85ccdc;
+  --number-color: #600e09;
+}
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  list-style: none !important;
+  font-family: var(--Rr);
+  color: var(--white);
+}
+
+.container {
+  max-width: 1200px !important;
+  width: 100% !important;
+  padding: 0 15px !important;
+  margin: 0 auto !important;
+}
+
+.body_page,
+.footer_text,
+.main_card-button {
+  background-color: var(--body-color);
+}
+
+.page_header,
+.main_img {
+  background-image: url(./img/hero_img.png);
+  height: 1030px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page_header::before,
+.page_header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(#111213 0%,
+      #111213 20.2%,
+      rgba(32, 31, 33, 0) 86.33%);
+}
+
+.page_header::after {
+  content: "";
+  top: 881px;
+  rotate: 180deg;
+}
+
+.navbar-brand{
+  width: 100px;
+  display: none;
+}
+
+.nav-link,
+.main_card-button,
+.title {
+  line-height: 42px;
+}
+
+.title-img {
+  max-width: 880px;
+  width: 100%;
+  margin-top: 178px !important;
+}
+
+.main_left-wrapper {
+  line-height: 21px;
+  font-size: 18px;
+}
+
+.main_img {
+  margin-top: 104px !important;
+  background-image: url(./img/thumb-1920-691823.png);
+}
+
+.main_img-wrapper {
+  width: 615px;
+  right: 80px;
+  top: 400px;
+}
+
+.main_img-text {
+ font-family: var(--Rr);
+  color: var(--text-color);
+  font-size: 62px;
+  line-height:84px; 
+}
+
+.img-text {
+  margin-left: 250px !important;
+}
+
+.main_cards {
+  gap: 55px;
+}
+
+.card {
+  width: 350px;
+  height: 250px;
+  background-image: url(./img/Rectangle\ 9.png);
+}
+
+.button_wrapper {
+  width: 0;
+  height: 0;
+  background: rgba(14, 14, 14, 0.8);
+  transition: 1s;
+}
+
+.main_card-button {
+  border: none;
+  width: 300px;
+  height: 65px;
+  display: none;
+  transition: 2s !important;
+}
+
+.card:hover .button_wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover .main_card-button {
+  display: flex;
+}
+
+.card_number {
+  font-family: var(--Rb);
+  font-size: 96px;
+  line-height: 112px;
+  color: var(--number-color);
+  top: -75px !important;
+  left: 0 !important;
+}
